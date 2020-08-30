@@ -34,6 +34,7 @@ export class Message extends Entity {
   @property({
     type: 'date',
     required: true,
+    // ignore_unmapped : true,
     default: () => new Date()
   })
   created_at: Date;
